@@ -20,11 +20,11 @@
     <script>
       if (!localStorage.theme) {
         localStorage.theme = 'dark'
-        document.getElementById('app').classList.add('dark')
+        document.documentElement.classList.add('dark')
       } else if (localStorage.theme === 'light') {
-        document.getElementById('app').classList.remove('dark')
+        document.documentElement.classList.remove('dark')
       } else if (localStorage.theme === 'dark') {
-        document.getElementById('app').classList.add('dark')
+        document.documentElement.classList.add('dark')
       }
     </script>
     <noscript
