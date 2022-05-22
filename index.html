@@ -9,22 +9,17 @@
     <link rel="icon" href="/favicon.png" />
     <title>Jeremy's Personal Portfolio</title>
     <script defer="defer" src="/js/chunk-vendors.08de952c.js"></script>
-    <script defer="defer" src="/js/app.682b20ef.js"></script>
-    <link href="/css/app.a3ac97f0.css" rel="stylesheet" />
-    <script defer="defer" src="/js/chunk-vendors.08de952c.js"></script>
     <script defer="defer" src="/js/app.5b520e78.js"></script>
-    <link href="/css/app.a3ac97f0.css" rel="stylesheet" />
+    <link href="/css/app.84370960.css" rel="stylesheet" />
   </head>
   <body>
     <div class="" id="app"></div>
     <script>
       if (!localStorage.theme) {
         localStorage.theme = 'dark'
-        document.documentElement.classList.add('dark')
+        document.getElementById('app').classList.add('dark')
       } else if (localStorage.theme === 'light') {
-        document.documentElement.classList.remove('dark')
-      } else if (localStorage.theme === 'dark') {
-        document.documentElement.classList.add('dark')
+        document.getElementById('app').classList.remove('dark')
       }
     </script>
     <noscript
